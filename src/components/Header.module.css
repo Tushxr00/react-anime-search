@@ -1,0 +1,14 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header h1 {
+  color: #aaa;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+.header h1 strong {
+  color: #313131;
+}
