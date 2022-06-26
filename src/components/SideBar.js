@@ -9,6 +9,12 @@ const SideBar = () => {
         <a href="#" target="_blank" rel="noreferrer">
           Attack on titan
         </a>
+        <a href="#" target="_blank" rel="noreferrer">
+          one punch
+        </a>
+        <a href="#" target="_blank" rel="noreferrer">
+          Sao
+        </a>
       </nav>
     </aside>
   );

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Container from "./assets/Container";
 import Header from "./components/Header";
+import MainContent from "./components/MainContent";
 import SideBar from "./components/SideBar";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <Container>
         <SideBar topAnime={topAnime} />
+        <MainContent />
       </Container>
     </div>
   );
