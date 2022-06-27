@@ -20,8 +20,6 @@ const App = () => {
     getTopAnime();
   }, []);
 
-  console.log({ topAnime });
-
   return (
     <div className="App">
       <Header />

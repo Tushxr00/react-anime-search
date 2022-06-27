@@ -7,7 +7,12 @@ const SideBar = (props) => {
       <nav>
         <h3>Top Anime</h3>
         {props.topAnime.map((anime) => (
-          <a key={anime.mal_id} href="#" target="_blank" rel="noreferrer">
+          <a
+            key={anime.mal_id}
+            href={anime.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             {anime.title}
           </a>
         ))}
