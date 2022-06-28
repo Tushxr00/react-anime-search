@@ -20,12 +20,28 @@ const App = () => {
     getTopAnime();
   }, []);
 
+  const fetchAnime = async (search) => {
+    const data = await fetch(`https://api.jikan.moe/v3/top/anime/`);
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+
+    // console.log(search);
+    fetchAnime(search);
+  };
+
   return (
     <div className="App">
       <Header />
       <Container>
         <SideBar topAnime={topAnime} />
-        <MainContent />
+        <MainContent
+          setSearch={setSearch}
+          handleSearch={handleSearch}
+          search={search}
+          animeList={animeList}
+        />
       </Container>
     </div>
   );
