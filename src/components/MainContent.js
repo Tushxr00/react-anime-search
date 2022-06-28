@@ -15,10 +15,11 @@ const MainContent = (props) => {
           />
         </form>
       </div>
-
-      <div className="anime-list">
-        {props.animeList.map(anime => (
-          <div>{anime.title}</div>
+      <div className={classes.animeList}>
+        {props.animeList.map((anime) => (
+          <div className={classes.animeCard} key={anime.mal_id}>
+            {anime.title}
+          </div>
         ))}
       </div>
     </main>
