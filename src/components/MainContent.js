@@ -15,6 +15,12 @@ const MainContent = (props) => {
           />
         </form>
       </div>
+
+      <div className="anime-list">
+        {props.animeList.map(anime => (
+          <div>{anime.title}</div>
+        ))}
+      </div>
     </main>
   );
 };

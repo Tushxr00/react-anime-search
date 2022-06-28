@@ -23,14 +23,12 @@ const App = () => {
   const fetchAnime = async (search) => {
     const data = await fetch(`https://api.jikan.moe/v3/search/anime?q=${search}&order_by=title&sort=asc&limit=20`).then((response) => response.json())
 
-    console.log(data.results)
     setAnimeList(data.results)
   };
 
   const handleSearch = (event) => {
     event.preventDefault();
 
-    console.log(search);
     fetchAnime(search);
   };
 
