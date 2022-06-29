@@ -1,4 +1,5 @@
 import React from "react";
+import AnimeCard from "./AnimeCard";
 import classes from "./MainContent.module.css";
 
 const MainContent = (props) => {
@@ -17,9 +18,10 @@ const MainContent = (props) => {
       </div>
       <div className={classes.animeList}>
         {props.animeList.map((anime) => (
-          <div className={classes.animeCard} key={anime.mal_id}>
-            {anime.title}
-          </div>
+          <AnimeCard
+            anime={anime}
+            key={anime.mal_id}
+          />
         ))}
       </div>
     </main>
