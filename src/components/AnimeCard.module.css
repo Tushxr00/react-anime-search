@@ -1,0 +1,30 @@
+.animeCard {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    padding: 16px 8px;
+  }
+  .animeCard a {
+    text-decoration: none;
+  }
+  .animeCard figure {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .animeCard figure img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+  }
+  .animeCard h3 {
+    color: #313131;
+  }
+  .animeCard:hover figure img {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+  }
+  

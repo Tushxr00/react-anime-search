@@ -1,11 +1,11 @@
 import React from 'react'
+import classes from "./AnimeCard.module.css"
 
 const AnimeCard = (props) => {
-    console.log(props.anime.image_url)
-    return <article className='animeCard'>
+    return <article className={classes.animeCard}>
         <a href="">
             <figure>
-                <img src={props.anime.imgae_url} alt="anime imgae" />
+                <img src={props.anime.image_url} alt="anime imgae" />
             </figure>
             <h3> {props.anime.title}</h3>
         </a>
