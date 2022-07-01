@@ -18,10 +18,7 @@ const MainContent = (props) => {
       </div>
       <div className={classes.animeList}>
         {props.animeList.map((anime) => (
-          <AnimeCard
-            anime={anime}
-            key={anime.mal_id}
-          />
+          <AnimeCard anime={anime} key={anime.mal_id} />
         ))}
       </div>
     </main>
